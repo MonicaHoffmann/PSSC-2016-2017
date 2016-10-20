@@ -13,7 +13,7 @@ namespace Models
         III,
         IV
     }
-    public class IStudent
+    public class Student
     {
         protected string studentName;
         protected YearOfStudy yearOfStudy;
@@ -21,7 +21,7 @@ namespace Models
         public YearOfStudy getYearOfStudy() { return yearOfStudy; }
         public void setStudentName(string studentName) { this.studentName = studentName; }
         public void setYearOfStud(YearOfStudy yearOfStudy) { this.yearOfStudy = yearOfStudy; }
-        public IStudent(string studentName, YearOfStudy yearOfStudy)
+        public Student(string studentName, YearOfStudy yearOfStudy)
         {
             this.studentName = studentName;
             this.yearOfStudy = yearOfStudy;

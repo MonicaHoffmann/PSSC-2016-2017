@@ -13,18 +13,23 @@ namespace Models
         Conferentiar,
         Profesor
     }
-    public class IProfessor
+    public class Professor
     {
-        protected string professorName;
-        protected PositionType positionType;
-        public string getProfessorName() { return professorName; }
+        private String professorName;
+        private PositionType positionType;
+        private String[] courses = new String[100];   
+        
+        public String getProfessorName() { return professorName; }
         public PositionType getPositionType() { return positionType; }
-        public void setProfessorName(string professorName) { this.professorName = professorName; }
+        public String getCourse(int index) { return courses[index]; }
+        public void setProfessorName(String professorName) { this.professorName = professorName; }
         public void setPositionType(PositionType positionType) { this.positionType = positionType; }
-        public IProfessor(string professorName, PositionType positionType)
+        public void setCourses(String course, int index) { this.courses[index] = course; }
+        public Professor(String professorName, PositionType positionType, String[] courses)
         {
             this.professorName = professorName;
             this.positionType = positionType;
+            this.courses = courses;
         }
         public void giveGradesToStudents();
         public void receiveProjectsFromStudents();
