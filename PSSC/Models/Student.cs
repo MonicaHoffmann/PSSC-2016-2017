@@ -15,18 +15,31 @@ namespace Models
     }
     public class Student
     {
-        private string studentName;
+        private string name;
         private YearOfStudy yearOfStudy;
+        private Discipline[] disciplines = new Discipline[100];
 
-        public string StudentName
+        public string Name
         {
-            get { return studentName; }
-            set { studentName = value; }
+            get { return name; }
+            set { name = value; }
         }
         public YearOfStudy YearOfStudy
         {
             get { return yearOfStudy; }
             set { yearOfStudy = value; }
+        }
+        public Discipline[] Disciplines
+        {
+            get { return disciplines; }
+            set { disciplines = value; }
+        }
+
+        public Student(string name, YearOfStudy yearOfStudy, Discipline[] disciplines)
+        {
+            this.name = name;
+            this.yearOfStudy = yearOfStudy;
+            this.disciplines = disciplines;
         }
     }
 }

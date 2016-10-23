@@ -15,33 +15,31 @@ namespace Models
     }
     public class Professor
     {
-        private string professorName;
+        private string name;
         private PositionType positionType;
-        private string[] disciplines = new string[100];
+        private Discipline[] disciplines = new Discipline[100];
 
-        public string ProfessorName
+        public string Name
         {
-            get { return professorName; }
-            set { professorName = value; }
+            get { return name; }
+            set { name = value; }
         }
         public PositionType PositionType
         {
             get { return positionType; }
             set { positionType = value; }
         }
-        public string[] Disciplines
+        public Discipline[] Disciplines
         {
             get { return disciplines; }
             set { disciplines = value; }
         }
        
-        public Professor(string professorName, PositionType positionType, string[] disciplines)
+        public Professor(string professorName, PositionType positionType, Discipline[] disciplines)
         {
-            this.professorName = professorName;
+            this.name = professorName;
             this.positionType = positionType;
             this.disciplines = disciplines;
         }
-        public void GiveGradesToStudents();
-        public void ReceiveProjectsFromStudents();
     }
 }
