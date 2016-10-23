@@ -8,10 +8,16 @@ namespace Models
 {
     public class Deanship
     {
+        private int id;
         private string nameDean;
         private string address;
         private Discipline[] disciplines = new Discipline[100];
 
+        public int Id
+        {
+            get { return id; }
+            set { id = value; }
+        }
         public string NameDean
         {
             get { return nameDean; }

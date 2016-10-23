@@ -15,10 +15,40 @@ namespace Models
     }
     public class Student
     {
+        private int id;
+        private const Int16 availableCredits = 60;
         private string name;
         private YearOfStudy yearOfStudy;
-        private Discipline[] disciplines = new Discipline[100];
+        private Discipline[] disciplines = new Discipline[16];
+        private Int16 acquiredCredits = 0;
+        private GradeExam[] gradesExam = new GradeExam[16];
+        private GradeOngoingActivity[] gradesOngoingActivity = new GradeOngoingActivity[16];
+        private PresentAtLaboratoryClass[] presentAtLaboratoryClasses = new PresentAtLaboratoryClass[16];
 
+        public int Id
+        {
+            get { return id; }
+            set { id = value; }
+        }
+        public GradeExam[] GradesExam
+        {
+            get { return gradesExam; }
+            set { gradesExam = value; }
+        }
+        public GradeOngoingActivity[] GradesOngoingActivity
+        {
+            get { return gradesOngoingActivity; }
+            set { gradesOngoingActivity = value; }
+        }
+        public Int16 AvailableCredits
+        {
+            get { return availableCredits; }
+        }
+        public Int16 AcquiredCredits
+        {
+            get { return acquiredCredits; }
+            set { acquiredCredits = value; }
+        }
         public string Name
         {
             get { return name; }

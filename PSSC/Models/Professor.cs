@@ -15,10 +15,16 @@ namespace Models
     }
     public class Professor
     {
+        private int id;
         private string name;
         private PositionType positionType;
-        private Discipline[] disciplines = new Discipline[100];
+        private Discipline[] disciplines = new Discipline[16];
 
+        public int Id
+        {
+            get { return id; }
+            set { id = value; }
+        }
         public string Name
         {
             get { return name; }
