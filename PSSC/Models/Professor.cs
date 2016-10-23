@@ -15,23 +15,33 @@ namespace Models
     }
     public class Professor
     {
-        private String professorName;
+        private string professorName;
         private PositionType positionType;
-        private String[] courses = new String[100];   
-        
-        public String getProfessorName() { return professorName; }
-        public PositionType getPositionType() { return positionType; }
-        public String getCourse(int index) { return courses[index]; }
-        public void setProfessorName(String professorName) { this.professorName = professorName; }
-        public void setPositionType(PositionType positionType) { this.positionType = positionType; }
-        public void setCourses(String course, int index) { this.courses[index] = course; }
-        public Professor(String professorName, PositionType positionType, String[] courses)
+        private string[] disciplines = new string[100];
+
+        public string ProfessorName
+        {
+            get { return professorName; }
+            set { professorName = value; }
+        }
+        public PositionType PositionType
+        {
+            get { return positionType; }
+            set { positionType = value; }
+        }
+        public string[] Disciplines
+        {
+            get { return disciplines; }
+            set { disciplines = value; }
+        }
+       
+        public Professor(string professorName, PositionType positionType, string[] disciplines)
         {
             this.professorName = professorName;
             this.positionType = positionType;
-            this.courses = courses;
+            this.disciplines = disciplines;
         }
-        public void giveGradesToStudents();
-        public void receiveProjectsFromStudents();
+        public void GiveGradesToStudents();
+        public void ReceiveProjectsFromStudents();
     }
 }

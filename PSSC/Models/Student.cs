@@ -15,18 +15,18 @@ namespace Models
     }
     public class Student
     {
-        protected string studentName;
-        protected YearOfStudy yearOfStudy;
-        public string getStudentName() { return studentName; }
-        public YearOfStudy getYearOfStudy() { return yearOfStudy; }
-        public void setStudentName(string studentName) { this.studentName = studentName; }
-        public void setYearOfStud(YearOfStudy yearOfStudy) { this.yearOfStudy = yearOfStudy; }
-        public Student(string studentName, YearOfStudy yearOfStudy)
+        private string studentName;
+        private YearOfStudy yearOfStudy;
+
+        public string StudentName
         {
-            this.studentName = studentName;
-            this.yearOfStudy = yearOfStudy;
+            get { return studentName; }
+            set { studentName = value; }
         }
-        public void receiveGradesFromProfessors();
-        public void giveProjectsToProfessors(); 
+        public YearOfStudy YearOfStudy
+        {
+            get { return yearOfStudy; }
+            set { yearOfStudy = value; }
+        }
     }
 }
