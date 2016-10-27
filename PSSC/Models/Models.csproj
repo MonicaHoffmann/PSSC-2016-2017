@@ -32,6 +32,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -39,7 +40,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Decanat.cs" />
+    <Compile Include="DAL\IEntity.cs" />
+    <Compile Include="DAL\IRepository.cs" />
+    <Compile Include="DAL\Repository.cs" />
+    <Compile Include="Deanship.cs" />
+    <Compile Include="Discipline.cs" />
+    <Compile Include="GradeExam.cs" />
+    <Compile Include="GradeOngoingActivity.cs" />
+    <Compile Include="PresenceAtLaboratoryClass.cs" />
     <Compile Include="Professor.cs" />
     <Compile Include="Student.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -23,7 +23,7 @@ namespace Models
         private Int16 acquiredCredits = 0;
         private GradeExam[] gradesExam = new GradeExam[16];
         private GradeOngoingActivity[] gradesOngoingActivity = new GradeOngoingActivity[16];
-        private PresentAtLaboratoryClass[] presentAtLaboratoryClasses = new PresentAtLaboratoryClass[16];
+        private PresenceAtLaboratoryClass[] presentAtLaboratoryClasses = new PresenceAtLaboratoryClass[16];
 
         public int Id
         {

@@ -6,20 +6,20 @@ using System.Threading.Tasks;
 
 namespace Models
 {
-    public class GradeExam
+    public class PresenceAtLaboratoryClass
     {
         private int id;
-        private Int16 grade;
+        private bool presence;
 
         public int Id
         {
             get { return id; }
             set { id = value; }
         }
-        public Int16 Grade
+        public bool Presence
         {
-            get { return grade; }
-            set { grade = value; }
+            get { return presence; }
+            set { presence = value; }
         }
     }
 }
