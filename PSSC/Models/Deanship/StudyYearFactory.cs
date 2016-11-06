@@ -10,6 +10,10 @@ namespace Models.Deanship
 
     public class StudyYearFactory
     {
-
+        public StudyYear CreateStudyYear(List<Subject.Subject> studyYear)
+        {
+            StudyYear _studyYear = new StudyYear(studyYear);
+            return _studyYear;
+        }
     }
 }

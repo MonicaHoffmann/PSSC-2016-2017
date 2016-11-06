@@ -12,7 +12,14 @@ namespace Models.Professor
     //factory pt root-ul de agregare Subjects
 
     public class SubjectsFactory
-    {/*
+    {
+        public Subjects CreateSubjects(List<Subject.Subject> subjects)
+        {
+            Subjects _subjects = new Subjects(subjects);
+            return _subjects;
+        }
+
+        /*
         public Professor CreateProfessor(PlainText name, PositionType positionType)
         {
             Contract.Requires<ArgumentNullException>(name != null, "name is null");
