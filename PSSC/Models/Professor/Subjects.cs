@@ -10,7 +10,7 @@ namespace Models.Professor
 {
     //clasa subjects are scopul de al lasa pe profesor sa faca, pt o materie de-a sa, urmatoarele
     //lucruri: sa adauge note la exam, nota la activitatea pe parcurs si prezenta, si sa seteze
-    //proportia activitatii pe parcurs
+    //proportia activitatii pe parcurs => AggregationRoot
     
     public class Subjects
     {

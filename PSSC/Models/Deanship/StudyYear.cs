@@ -9,9 +9,9 @@ using System.Threading.Tasks;
 
 namespace Models.Deanship
 {
-    //clasa StudyYear defineste lista de discipline pentru un an de studiu; ce profesor se ocupa de fiecare disciplina;
-    //care student frecventeaza care disciplina; clasa poate calcula media generala a unui student si poate 
-    //genera rapoarte cu acestea
+    //clasa StudyYear da voie decanatului sa defineasca lista de discipline pentru un an de studiu; ce profesor se ocupa 
+    //de fiecare disciplina; care student frecventeaza care disciplina; clasa poate calcula media generala a unui student
+    //si poate genera rapoarte cu acestea => AggregationRoot
     public class StudyYear
     {
         private List<Subject.Subject> _definedSubjects;

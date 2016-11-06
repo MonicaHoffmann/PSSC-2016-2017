@@ -12,7 +12,7 @@ namespace Models.Subject
     //studentilor; poate prelua situatia unui student si poate calcula media finala pentru
     //un student
 
-    //AggregationRoot
+    //entity
     public class Subject
     {
         public SubjectInformation SubjectInfo { get; internal set; }

@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 namespace Models.Student
 {
     //clasa GradeReport il ajuta pe student sa-si vada notele obtinute la oricare dintre discipline
+    // => AggregationRoot
     public class GradeReport
     {
         private ReadOnlyCollection<KeyValuePair<SubjectInformation, SubjectSituation>> _gradeReport;

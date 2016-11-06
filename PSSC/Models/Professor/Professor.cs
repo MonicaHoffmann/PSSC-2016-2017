@@ -9,7 +9,7 @@ namespace Models.Professor
 {
     //clasa profesor poate construi un profesor
 
-    //AggregationRoot
+    //entity
     public class Professor
     {
         public PlainText Name { get; internal set; }

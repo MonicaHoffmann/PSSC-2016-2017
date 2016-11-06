@@ -9,7 +9,7 @@ namespace Models.Student
 {
     //clasa student poate construi un student in doua feluri
 
-    //AggregationRoot
+    //entity
     public class Student
     {
         public RegistrationNumber RegNumber { get; internal set; }
