@@ -46,6 +46,7 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Data.Linq" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
@@ -182,13 +183,16 @@
     <Compile Include="Models\Contexts\Deanship\IReportPublisher.cs" />
     <Compile Include="Models\Contexts\Deanship\StudyYear.cs" />
     <Compile Include="Models\Contexts\Deanship\StudyYearFactory.cs" />
+    <Compile Include="Models\Contexts\Deanship\StudyYearRepository.cs" />
     <Compile Include="Models\Contexts\Professor\GradeableSituation.cs" />
     <Compile Include="Models\Contexts\Professor\Subjects.cs" />
     <Compile Include="Models\Contexts\Professor\SubjectsFactory.cs" />
+    <Compile Include="Models\Contexts\Professor\SubjectsRepository.cs" />
     <Compile Include="Models\Contexts\Professor\TeachingSubject.cs" />
     <Compile Include="Models\Contexts\Student\EnrolledSubject.cs" />
     <Compile Include="Models\Contexts\Student\GradeReport.cs" />
     <Compile Include="Models\Contexts\Student\GradeReportFactory.cs" />
+    <Compile Include="Models\Contexts\Student\GradeReportRepository.cs" />
     <Compile Include="Models\Cqrs\CommandDispatcher.cs" />
     <Compile Include="Models\Cqrs\CommandResult.cs" />
     <Compile Include="Models\Cqrs\ICommand.cs" />
@@ -201,9 +205,17 @@
     <Compile Include="Models\Cqrs\QueryDispatcher.cs" />
     <Compile Include="Models\DefinedSubject.cs" />
     <Compile Include="Models\Generics\Entity.cs" />
+    <Compile Include="Models\Generics\EventData.cs" />
     <Compile Include="Models\Generics\Exceptions\HighNumeratorException.cs" />
     <Compile Include="Models\Generics\Exceptions\InvalidCreditsValueException.cs" />
     <Compile Include="Models\Generics\Exceptions\InvalidGradeValueException.cs" />
+    <Compile Include="Models\Generics\IAggregate.cs" />
+    <Compile Include="Models\Generics\IAggregateFactory.cs" />
+    <Compile Include="Models\Generics\IEntity.cs" />
+    <Compile Include="Models\Generics\IRepository.cs" />
+    <Compile Include="Models\Generics\ISettings.cs" />
+    <Compile Include="Models\Generics\Repository.cs" />
+    <Compile Include="Models\Generics\SqlServerRepository.cs" />
     <Compile Include="Models\Generics\ValueObjects\Attendence.cs" />
     <Compile Include="Models\Generics\ValueObjects\Credits.cs" />
     <Compile Include="Models\Generics\ValueObjects\Grade.cs" />
