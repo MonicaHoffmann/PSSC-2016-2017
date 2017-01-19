@@ -1,0 +1,26 @@
+﻿@model University_App.Models.IdentitySelect
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>University App</h2>
+<!-- <h2>@Model.IdentityType</h2> -->
+
+<form method="post">
+    <fieldset>
+        <legend>Choose identity</legend>
+        <div>
+            <label for="IdentityType">Identity type:</label>
+            <select name="IdentityType" form="carform">
+                <option value="Student">Student</option>
+                <option value="Professor">Professor</option>
+                <option value="Deanship">Deanship</option>
+            </select>
+        </div>
+        <div>
+            <label>&nbsp;</label>
+            <input type="submit" value="Submit" class="submit" />
+        </div>
+    </fieldset>
+</form>

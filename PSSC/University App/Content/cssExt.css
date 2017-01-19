@@ -1,0 +1,44 @@
+﻿body {
+    overflow-y: scroll;
+    margin-bottom: 100px;
+}
+.label {
+    color: #b03636;    
+}
+.button {
+    background-color: steelblue; 
+    border: solid steelblue; 
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    margin: 4px 7px 2px 4px;  
+}
+.button:hover {
+    background-color: white;
+    color: steelblue;
+}
+.textbox {
+    border: solid #b03636;
+    border-radius: 4px;
+    text-align: center;
+    margin: 4px 7px 2px 4px;
+    color: #c94f4f;
+}
+.textbox:hover {
+    border: solid #edc4c4;
+}
+#footer {
+    background-color: #edc4c4 !important;
+	bottom: 0px;
+    font-size: 14px;
+    text-align: center;
+    color: steelblue;   
+    position: fixed; 
+    width: 100%;
+}
