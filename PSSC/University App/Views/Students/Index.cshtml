@@ -1,0 +1,25 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Students</h2>
+
+<table>
+    <tr>
+        <td>Registration Number</td>
+        <td>Name</td>
+        <td>Accumulated Credits</td>
+    </tr>
+
+    @foreach (var variable in Model.Student)
+    {
+        <tr>
+            <td>@variable.RegistrationNumber</td>
+            <td>@variable.Name</td>
+            <td>@variable.AccumulatedCredits</td>
+        </tr>
+    }
+
+</table>
